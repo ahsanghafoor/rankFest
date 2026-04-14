@@ -80,7 +80,7 @@ export default async function CaseStudyPage({ params }) {
 
             <div className="relative h-96 rounded-2xl overflow-hidden border border-accent/20">
               <Image
-                src={`/${study.featureImage}`}
+                src={`${study.featureImage}`}
                 alt={`${study.title} screenshot`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

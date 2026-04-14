@@ -10,8 +10,8 @@ export const STATS = {
 };
 
 export const CONTACT_INFO = {
-  email: 'hello@rankfest.com',
-  phone: '+1 (234) 567-890',
+  email: 'info@rankfest.co',
+  phone: '+44 748 7516 849',
   location: 'Serving clients worldwide',
   calendlyUrl: 'https://calendly.com/rankfest/30min',
 };

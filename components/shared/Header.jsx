@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { AGENCY_NAME, CONTACT_INFO } from '@/data/constants';
+import Image from 'next/image';
 
 export default function Header() {
   const pathname = usePathname();
@@ -61,7 +62,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0 group">
             <span className="text-2xl font-bold text-accent group-hover:scale-105 transition-transform inline-block">
-              {AGENCY_NAME}
+              <Image src="/logo.svg" alt="Logo" width={130} height={130} />
             </span>
           </Link>
 
@@ -79,8 +80,8 @@ export default function Header() {
               </button>
               <div
                 className={`absolute top-full left-0 w-56 bg-card border border-border rounded-lg shadow-2xl shadow-accent/20 overflow-hidden z-50 transition-all duration-200 origin-top ${isServicesOpen
-                    ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
-                    : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
+                  ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto'
+                  : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
                   }`}
               >
                 {services.map((service, idx) => (

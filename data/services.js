@@ -70,7 +70,7 @@ export const services = [
       'Established sites looking to dominate their niche',
     ],
 
-    image: 'SEO.webp',
+    image: '/assets/services/SEO.webp',
   },
 
   {
@@ -144,7 +144,7 @@ export const services = [
       'Businesses with clear customer acquisition costs',
     ],
 
-    image: 'ppc.webp',
+    image: '/assets/services/ppc.webp',
   },
 
   {
@@ -218,7 +218,7 @@ export const services = [
       'Any business with a physical location',
     ],
 
-    image: 'local_seo.webp',
+    image: '/assets/services/local_seo.webp',
   },
 
   {
@@ -292,7 +292,7 @@ export const services = [
       'Companies ready to make a digital investment',
     ],
 
-    image: 'web.webp',
+    image: '/assets/services/web.webp',
   },
 
   {
@@ -366,7 +366,7 @@ export const services = [
       'Teams prioritizing brand consistency',
     ],
 
-    image: 'graphic.webp',
+    image: '/assets/services/graphic.webp',
   },
 
   {
@@ -440,7 +440,7 @@ export const services = [
       'Startups needing brand awareness',
     ],
 
-    image: 'content_marketing.webp',
+    image: '/assets/services/content_marketing.webp',
   },
 ];
 

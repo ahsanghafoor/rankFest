@@ -34,52 +34,52 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: 'Alex Johnson',
+      name: 'Umar Farooq',
       role: 'Founder & SEO Strategist',
-      initials: 'AJ',
-      image: '/placeholder-user.jpg'
+      initials: 'UF',
+      image: '/assets/team/umar.png'
     },
     {
-      name: 'Maria Garcia',
-      role: 'Head of Content & Strategy',
-      initials: 'MG',
-      image: '/placeholder-user.jpg'
-    },
-    {
-      name: 'David Lee',
+      name: 'Ahmad Raza',
       role: 'Technical SEO Lead',
-      initials: 'DL',
-      image: '/placeholder-user.jpg'
+      initials: 'AR',
+      image: '/assets/team/ahmad.png'
     },
     {
-      name: 'Sarah Chen',
-      role: 'PPC & Paid Ads Manager',
-      initials: 'SC',
-      image: '/placeholder-user.jpg'
-    },
-    {
-      name: 'James Wilson',
+      name: 'Ahsan Ghafoor',
       role: 'Web Development Lead',
-      initials: 'JW',
-      image: '/placeholder-user.jpg'
+      initials: 'AG',
+      image: '/assets/team/ahsan.png'
     },
     {
-      name: 'Emma Thompson',
+      name: 'Naeem Zahoor',
+      role: 'PPC & Paid Ads Manager',
+      initials: 'NZ',
+      image: '/assets/team/naeem.png'
+    },
+    {
+      name: 'Salman Arshad',
       role: 'Branding & Design Specialist',
-      initials: 'ET',
-      image: '/placeholder-user.jpg'
+      initials: 'SA',
+      image: '/assets/team/salman.png'
     },
     {
-      name: 'Michael Rodriguez',
+      name: 'Hassan Raza',
       role: 'Local SEO Specialist',
-      initials: 'MR',
-      image: '/placeholder-user.jpg'
+      initials: 'HR',
+      image: '/assets/team/hassan.png'
     },
     {
-      name: 'Lisa Anderson',
+      name: 'Abdul Raouf',
+      role: 'Content Writer',
+      initials: 'AR',
+      image: '/assets/team/rauf.png'
+    },
+    {
+      name: 'Farhan Rasool',
       role: 'Client Success Manager',
-      initials: 'LA',
-      image: '/placeholder-user.jpg'
+      initials: 'FR',
+      image: '/assets/team/farhan.png'
     },
   ];
 
@@ -109,13 +109,13 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-foreground mb-8">Our Story</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              {AGENCY_NAME} started in 2016 when Alex Johnson realized that most digital marketing agencies were more focused on complexity than results. He founded {AGENCY_NAME} with a simple mission: help businesses get found, trusted, and chosen online.
+              {AGENCY_NAME} started in 2016 when Umer Farooq realized that most digital marketing agencies were more focused on complexity than results. He founded {AGENCY_NAME} with a simple mission: help businesses get found, trusted, and chosen online.
             </p>
             <p>
               What started as a one-person SEO consultancy has grown into a full-service digital marketing agency helping hundreds of businesses achieve measurable growth. But our core belief hasn't changed: success is measured in business results, not activity metrics.
             </p>
             <p>
-              Today, we're a team of digital marketing specialists united by one goal—delivering ROI for our clients. We've generated millions in revenue for our clients through strategic SEO, targeted paid advertising, and comprehensive digital marketing strategies.
+              Today, we're a team of digital marketing specialists united by one goal delivering ROI for our clients. We've generated millions in revenue for our clients through strategic SEO, targeted paid advertising, and comprehensive digital marketing strategies.
             </p>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 md:py-32 bg-card border-y border-border">
+      {/* <section className="py-20 md:py-32 bg-card border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-foreground mb-12 text-center">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -209,7 +209,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       <section className="py-12 md:py-20">

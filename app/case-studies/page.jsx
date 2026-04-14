@@ -42,7 +42,7 @@ export default function CaseStudiesPage() {
                 {/* Image Header */}
                 <div className="relative h-48 overflow-hidden group-hover:brightness-110 transition-all flex-shrink-0">
                   <Image
-                    src={`/${study.featureImage}`}
+                    src={`${study.featureImage}`}
                     alt={study.title}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

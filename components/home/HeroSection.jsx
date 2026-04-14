@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, TrendingUp, Users, Globe, BarChart3, Search } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Globe, BarChart3, Search, UserStar } from 'lucide-react';
 import Button from '@/components/shared/Button';
 import { useScrollAnimation, useCountUp } from '@/hooks/useScrollAnimation';
 import { AGENCY_NAME, TAGLINE, STATS } from '@/data/constants';
@@ -137,26 +137,26 @@ export default function HeroSection() {
             {/* Trust Elements */}
             <div className="pt-6 border-t border-border">
               <div className="grid grid-cols-3 gap-4">
-                <AnimatedCounter 
-                  end={parseInt(STATS.yearsInBusiness)} 
-                  suffix="+" 
-                  label="Years in Business" 
-                  icon={TrendingUp} 
-                  delay={200} 
+                <AnimatedCounter
+                  end={parseInt(STATS.yearsInBusiness)}
+                  suffix="+"
+                  label="Years in Business"
+                  icon={TrendingUp}
+                  delay={200}
                 />
-                <AnimatedCounter 
-                  end={parseInt(STATS.clientsHelped)} 
-                  suffix="+" 
-                  label="Clients Helped" 
-                  icon={Users} 
-                  delay={400} 
+                <AnimatedCounter
+                  end={parseInt(STATS.clientsHelped)}
+                  suffix="+"
+                  label="Clients Helped"
+                  icon={Users}
+                  delay={400}
                 />
-                <AnimatedCounter 
-                  end={parseInt(STATS.reviewsAndRatings)} 
-                  suffix="+" 
-                  label="Success Stories" 
-                  icon={Globe} 
-                  delay={600} 
+                <AnimatedCounter
+                  end={"5.0"}
+                  suffix="★"
+                  label="Client Satisfaction"
+                  icon={UserStar}
+                  delay={600}
                 />
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function HeroSection() {
                 {/* Main GIF area */}
                 <div className="relative rounded-xl overflow-hidden border border-white/10">
                   <Image
-                    src="/active_users.gif"
+                    src="/assets/active_users.gif"
                     width={600}
                     height={300}
                     alt="Active Users Analytics"

@@ -9,8 +9,8 @@ export const caseStudies = [
     metricLabel: 'in Abu Dhabi, UAE',
     shortDesc: 'Homes Fixing offered top-quality renovation services but lacked online visibility. We helped them dominate local search in Abu Dhabi.',
     description: 'Homes Fixing offered top-quality renovation services but lacked online visibility. We helped them dominate local search in Abu Dhabi.',
-    image: '/home_c2.webp',
-    featureImage: 'c1.webp',
+    image: '/assets/case-studies/home_c2.webp',
+    featureImage: '/assets/case-studies/c1.webp',
 
     challenge: `Homes Fixing did great renovation work in Abu Dhabi. Their clients loved them and referrals kept coming. The quality of their craftsmanship was never in doubt.
 
@@ -68,8 +68,8 @@ They were losing potential customers to competitors who simply did not do as goo
     metricLabel: 'in Birmingham, UK',
     shortDesc: 'They provided trusted renovation services but struggled to stand out online. We helped them secure the top spot in Birmingham.',
     description: 'They provided trusted renovation services but struggled to stand out online. We helped them secure the top spot in Birmingham.',
-    image: '/home_c3.webp',
-    featureImage: 'c2.webp',
+    image: '/assets/case-studies/home_c3.webp',
+    featureImage: '/assets/case-studies/c2.webp',
 
     challenge: `Birmingham Renovations had built a solid reputation through quality workmanship. Homeowners were always happy and they had plenty of repeat customers.
 
@@ -127,9 +127,9 @@ The team knew they were losing business to companies that were not in the same l
     metricLabel: 'in Barnsley, UK',
     shortDesc: 'AZ Home Improvements offered great services but did not show up in local searches. We helped them reach the top spot in Barnsley.',
     description: 'AZ Home Improvements offered great services but did not show up in local searches. We helped them reach the top spot in Barnsley.',
-    image: '/home_c1.webp',
-    featureImage: 'c3.webp',
-    
+    image: '/assets/case-studies/home_c1.webp',
+    featureImage: '/assets/case-studies/c3.webp',
+
     challenge: `AZ Home Improvements had been serving the Barnsley area for a long time. They did everything from kitchen refits to full property renovations. Their work was always top-notch.
 
 The problem was that almost nobody was finding them through Google. When homeowners searched for renovation services, AZ Home Improvements simply did not show up. They relied heavily on word of mouth and the occasional social media post. This worked to a degree but it was not sustainable or scalable.

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Mail, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -35,7 +36,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold text-accent mb-2">RankFest</h3>
+            <span className="group-hover:scale-105 transition-transform inline-block mb-3">
+              <Image src="/logo.svg" alt="Logo" width={130} height={130} />
+            </span>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Professional SEO services for businesses aiming for real growth. Get seen, trusted, and chosen online.
             </p>
@@ -65,18 +68,18 @@ export default function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Get in Touch</h4>
             <div className="space-y-3">
               <a
-                href="mailto:hello@irank.com"
+                href="mailto:info@rankfest.co"
                 className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-sm"
               >
                 <Mail size={16} />
-                <span>hello@irank.com</span>
+                <span>info@rankfest.co</span>
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+447487516849"
                 className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-sm"
               >
                 <Phone size={16} />
-                <span>+1 (234) 567-890</span>
+                <span>+44 748 7516 849</span>
               </a>
             </div>
           </div>

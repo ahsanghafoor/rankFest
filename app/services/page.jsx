@@ -46,7 +46,7 @@ export default function ServicesPage() {
                   {/* Image Container */}
                   <div className="relative h-44 mb-6 bg-accent/5 rounded-xl flex items-center justify-center overflow-hidden border border-border group-hover:border-accent/30 transition-all duration-500">
                     <Image
-                      src={`/${service.image}`}
+                      src={`${service.image}`}
                       alt={service.name}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"

@@ -67,7 +67,7 @@ function ServiceHero({ service }) {
                             <div className="absolute -inset-4 bg-accent/10 rounded-3xl blur-2xl group-hover:bg-accent/20 transition-all duration-500"></div>
                             <div className="relative bg-gradient-to-br from-accent/20 via-accent/10 to-accent/5 rounded-2xl border border-accent/20 p-2 overflow-hidden group-hover:border-accent/40 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-accent/20">
                                 <Image
-                                    src={`/${service.image}`}
+                                    src={`${service.image}`}
                                     alt={service.name}
                                     width={800}
                                     height={500}
@@ -299,7 +299,7 @@ function OtherServicesSection({ currentSlug }) {
                             >
                                 <div className="relative h-44 mb-4 bg-accent/5 rounded-xl flex items-center justify-center overflow-hidden border border-border group-hover:border-accent/30 transition-colors">
                                     <Image
-                                        src={`/${service.image}`}
+                                        src={`${service.image}`}
                                         alt={service.name}
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-500"

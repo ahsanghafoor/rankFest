@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <CaseStudiesCarousel />
-      <VideoTestimonialsSection />
+      {/* <VideoTestimonialsSection /> */}
       <ProcessSection />
       <FinalCTA />
     </>
