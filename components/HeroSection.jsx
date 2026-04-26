@@ -205,7 +205,7 @@ export default function HeroSection() {
           <motion.h1
             variants={itemVariants}
             className="font-display font-bold leading-[1.08] text-ink"
-            style={{ fontSize: 'clamp(2.5rem, 5.2vw, 4.25rem)' }}
+            style={{ fontSize: 'clamp(2rem, 5.2vw, 4.25rem)' }}
           >
             More than an agency,
             <br />
@@ -261,19 +261,36 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Stats — pill cards with icons */}
-          <motion.div variants={itemVariants} className="mt-9 flex flex-wrap gap-3">
+          <motion.div variants={itemVariants} className="mt-9 grid grid-cols-2 lg:flex lg:flex-wrap gap-3">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="flex items-center gap-3 bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl px-4 py-3 shadow-sm"
+                className="flex items-center gap-2.5 bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl px-4 py-3.5 shadow-sm"
               >
                 <div className="w-8 h-8 rounded-xl bg-orange/10 flex items-center justify-center flex-shrink-0 text-orange">
                   <s.Icon />
                 </div>
                 <div>
                   <div className="font-bold text-lg text-ink leading-none">{s.value}</div>
-                  <div className="text-[10px] text-ink/45 uppercase tracking-widest mt-1">{s.label}</div>
+                  <div className="text-[10px] text-ink/45 uppercase tracking-wider mt-1">{s.label}</div>
                 </div>
+              </div>
+            ))}
+          </motion.div>
+
+          {/* Mobile-only social proof strip — mirrors the hidden right column */}
+          <motion.div
+            variants={itemVariants}
+            className="mt-6 lg:hidden grid grid-cols-3 gap-2.5"
+          >
+            {[
+              { value: '+312%', label: 'Calls Increased', color: 'text-green-500' },
+              { value: '#1', label: 'Maps Ranking', color: 'text-orange' },
+              { value: '4.9★', label: '127 Reviews', color: 'text-orange' },
+            ].map((item) => (
+              <div key={item.label} className="bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl p-3 text-center">
+                <div className={`font-bold text-base leading-none ${item.color}`}>{item.value}</div>
+                <div className="text-[9px] text-ink/40 uppercase tracking-wide mt-1.5 leading-snug">{item.label}</div>
               </div>
             ))}
           </motion.div>
@@ -383,24 +400,21 @@ export default function HeroSection() {
 
       {/* ── Static industry trust strip ── */}
       <div className="relative z-10 py-5 px-5 sm:px-8">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-center text-[12px] font-bold uppercase tracking-[0.2em] text-ink/50 mb-4">
-            TRUSTED BY LOCAL BUSINESSES ACROSS INDUSTRIES
+        <div className="max-w-7xl mx-auto bg-white/60 border border-ink/8 rounded-2xl px-5 py-5 shadow-sm">
+          <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-ink/40 mb-4">
+            Trusted by local businesses across industries
           </p>
-          <div className="flex flex-wrap justify-center gap-2">
+          <div className="grid grid-cols-5 sm:grid-cols-5 gap-2">
             {trustIndustries.map((item) => (
               <div
                 key={item.label}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 transition-colors group cursor-default
-                  }`}
+                className={`flex flex-col items-center gap-1.5 rounded-xl border border-ink/8 bg-cream px-2 py-2.5 transition-colors group cursor-default ${item.isMore ? 'border-orange/20 bg-orange/5' : 'hover:border-orange/20 hover:bg-orange/5'}`}
               >
                 <item.Icon
-                  className={`w-3.5 h-3.5 flex-shrink-0 transition-colors ${item.isMore ? 'text-orange/60' : 'text-ink/35 group-hover:text-orange/60'
-                    }`}
+                  className={`w-4 h-4 flex-shrink-0 transition-colors ${item.isMore ? 'text-orange/60' : 'text-ink/40 group-hover:text-orange/60'}`}
                 />
                 <span
-                  className={`text-[12px] font-medium whitespace-nowrap transition-colors ${item.isMore ? 'text-orange/70' : 'text-ink/45 group-hover:text-ink/65'
-                    }`}
+                  className={`text-[9px] sm:text-[10px] font-medium text-center leading-tight transition-colors ${item.isMore ? 'text-orange/70' : 'text-ink/50 group-hover:text-ink/70'}`}
                 >
                   {item.label}
                 </span>

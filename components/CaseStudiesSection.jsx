@@ -96,7 +96,7 @@ export default function CaseStudiesSection() {
   const headerInView = useInView(headerRef, { once: true, margin: '-60px 0px' })
 
   return (
-    <section id="case-studies" className="py-16 bg-cream">
+    <section id="case-studies" className="py-12 lg:py-16 bg-cream">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <motion.div
@@ -126,7 +126,7 @@ export default function CaseStudiesSection() {
         {/* Cards */}
         <motion.div
           ref={ref}
-          className="grid lg:grid-cols-3 gap-6 lg:gap-8"
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           variants={gridVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}

@@ -64,7 +64,7 @@ export default function ContactPage() {
   return (
     <>
       {/* ── Hero + Form combined on cream ── */}
-      <section className="bg-cream pt-36 pb-20 overflow-hidden relative">
+      <section className="bg-cream pt-28 sm:pt-36 pb-14 sm:pb-20 overflow-hidden relative">
         <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
         <div className="absolute inset-0 hero-lines pointer-events-none" />
         <div className="absolute top-16 right-1/3 w-96 h-96 bg-orange/8 rounded-full blur-3xl pointer-events-none" />
@@ -82,7 +82,7 @@ export default function ContactPage() {
               <span className="text-xs uppercase tracking-[0.15em] text-ink/50 font-medium">Get In Touch</span>
             </div>
 
-            <h1 className="font-display text-5xl lg:text-7xl font-bold text-ink leading-[1.05] mb-6">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-ink leading-[1.05] mb-6">
               Let&apos;s talk about your{' '}
               <span className="text-orange italic">growth</span>
             </h1>
@@ -96,7 +96,7 @@ export default function ContactPage() {
       </section>
 
       {/* ── Contact Form + Info ── */}
-      <section className="py-20 bg-cream -mt-6">
+      <section className="py-14 lg:py-20 bg-cream -mt-6">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-start">
 
