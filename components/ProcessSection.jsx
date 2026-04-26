@@ -56,7 +56,7 @@ export default function ProcessSection() {
   const headerInView = useInView(headerRef, { once: true, margin: '-60px 0px' })
 
   return (
-    <section id="process" className="py-16 bg-dark relative overflow-hidden">
+    <section id="process" className="py-12 lg:py-16 bg-dark relative overflow-hidden">
       {/* Subtle dot texture */}
       <div className="absolute inset-0 opacity-[0.025]"
         style={{
@@ -134,7 +134,7 @@ export default function ProcessSection() {
                 {/* Detail tag */}
                 <div className="flex items-center gap-2">
                   <div className="w-4 h-px bg-orange/40" />
-                  <span className="text-[10px] text-orange/60 uppercase tracking-widest font-medium">
+                  <span className="text-[10px] text-orange/60 uppercase tracking-wider sm:tracking-widest font-medium break-words">
                     {step.detail}
                   </span>
                 </div>

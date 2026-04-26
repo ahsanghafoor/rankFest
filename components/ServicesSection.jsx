@@ -91,7 +91,7 @@ export default function ServicesSection() {
   const gridInView = useInView(gridRef, { once: true, margin: '-60px 0px' })
 
   return (
-    <section id="services" className="py-16 bg-cream">
+    <section id="services" className="py-12 lg:py-16 bg-cream">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
 
         {/* ── Section header — centered ── */}

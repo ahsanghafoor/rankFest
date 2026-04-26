@@ -28,7 +28,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-cream pt-36 pb-20 overflow-hidden relative">
+      <section className="bg-cream pt-28 sm:pt-36 pb-14 sm:pb-20 overflow-hidden relative">
         <div className="absolute inset-0 dot-grid opacity-30 pointer-events-none" />
         <div className="absolute inset-0 hero-lines pointer-events-none" />
         <div className="absolute top-16 right-1/3 w-96 h-96 bg-orange/8 rounded-full blur-3xl pointer-events-none" />
@@ -46,7 +46,7 @@ export default function AboutPage() {
               <span className="text-xs uppercase tracking-[0.15em] text-ink/50 font-medium">Our Story</span>
             </div>
 
-            <h1 className="font-display text-5xl lg:text-7xl font-bold text-ink leading-[1.05] mb-6">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold text-ink leading-[1.05] mb-6">
               The agency behind your{' '}
               <span className="text-orange italic">next #1</span>{' '}
               ranking
@@ -61,9 +61,9 @@ export default function AboutPage() {
       </section>
 
       {/* ── Company Story ── */}
-      <section className="py-20 bg-cream">
+      <section className="py-14 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
-          <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-start">
             <motion.div
               ref={storyRef}
               initial={{ opacity: 0, x: -40 }}
@@ -151,7 +151,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Stats Bar ── */}
-      <section className="py-14 bg-dark">
+      <section className="py-10 lg:py-14 bg-dark">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <motion.div
             ref={statsRef}
@@ -177,7 +177,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Values ── */}
-      <section className="py-20 bg-cream">
+      <section className="py-14 lg:py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <motion.div
             ref={valuesRef}
@@ -221,7 +221,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Team ── */}
-      <section className="py-20 bg-dark">
+      <section className="py-14 lg:py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <motion.div
             ref={teamRef}
@@ -253,12 +253,12 @@ export default function AboutPage() {
                 className="bg-white/5 border border-white/8 rounded-2xl overflow-hidden hover:border-orange/30 hover:bg-white/8 transition-all duration-300 group"
               >
                 {/* Photo area */}
-                <div className="relative h-52 bg-gradient-to-br from-orange/15 to-orange/5 overflow-hidden">
+                <div className="relative aspect-square bg-gradient-to-br from-orange/15 to-orange/5 overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                     onError={(e) => { e.target.style.display = 'none' }}
                   />
                   {/* Fallback initial */}

@@ -53,7 +53,7 @@ export default function FreeAuditSection() {
   }
 
   return (
-    <section id="free-audit" className="py-16 bg-cream">
+    <section id="free-audit" className="py-12 lg:py-16 bg-cream">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* Left: copy */}
         <motion.div
@@ -188,7 +188,7 @@ export default function FreeAuditSection() {
               </form>
 
               {/* Credibility bar */}
-              <div className="mt-7 pt-6 border-t border-ink/6 flex items-center justify-between flex-wrap gap-3">
+              <div className="mt-7 pt-6 border-t border-ink/6 flex flex-col sm:flex-row items-center justify-between gap-2">
                 <div className="flex items-center gap-1.5">
                   <div className="flex gap-0.5">
                     {[...Array(5)].map((_, i) => (

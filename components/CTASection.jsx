@@ -45,7 +45,7 @@ export default function CTASection() {
             <p className="mt-3 text-sm lg:text-base text-white/65 leading-relaxed max-w-md mx-auto lg:mx-0">
               We take on a limited number of new clients each month. Serious about growth? Let's talk.
             </p>
-            <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 justify-center lg:justify-start">
+            <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
               {['No long-term contracts', 'Results in 30 days', 'Cancel anytime'].map((b) => (
                 <span key={b} className="flex items-center gap-1.5 text-white/55 text-xs">
                   <span className="text-white font-bold">✓</span>{b}
@@ -64,7 +64,7 @@ export default function CTASection() {
           >
             <motion.a
               href="/#free-audit"
-              className="bg-white text-orange font-bold px-9 py-4 rounded-2xl text-base shadow-xl shadow-black/20 hover:bg-cream transition-all inline-flex items-center gap-2.5 whitespace-nowrap"
+              className="bg-white text-orange font-bold px-9 py-4 rounded-2xl text-base shadow-xl shadow-black/20 hover:bg-cream transition-all inline-flex items-center justify-center gap-2.5 w-full sm:w-auto"
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.97 }}
             >
