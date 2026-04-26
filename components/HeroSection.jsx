@@ -138,11 +138,11 @@ const trustIndustries = [
   { label: 'HVAC', Icon: IcoWind },
   { label: 'Dentists', Icon: IcoActivity },
   { label: 'Roofers', Icon: IcoHome },
-  { label: 'Solar Installation', Icon: IcoSun },
+  { label: 'Solar', Icon: IcoSun },
   { label: 'Pest Control', Icon: IcoShield },
-  { label: 'Home Remodeling', Icon: IcoPencilRuler },
-  { label: 'Water & Fire Damage', Icon: IcoDroplet },
-  { label: 'Plus more', Icon: IcoPlusCircle, isMore: true },
+  { label: 'Remodeling', Icon: IcoPencilRuler },
+  { label: 'Restoration', Icon: IcoDroplet },
+  { label: '& Many More', Icon: IcoPlusCircle, isMore: true },
 ]
 
 export default function HeroSection() {
@@ -242,30 +242,30 @@ export default function HeroSection() {
           </motion.p>
 
           {/* CTAs */}
-          <motion.div variants={itemVariants} className="mt-8 flex flex-wrap gap-3 items-center">
+          <motion.div variants={itemVariants} className="mt-8 flex flex-col sm:flex-row gap-3">
             <a
               href="#free-audit"
-              className="inline-flex items-center gap-2 bg-orange text-white font-semibold px-7 py-3.5 rounded-full text-sm hover:bg-orange/90 shadow-lg shadow-orange/25 transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-7 py-3.5 rounded-full text-sm hover:bg-orange/90 shadow-lg shadow-orange/25 transition-all hover:-translate-y-0.5 w-full sm:w-auto"
             >
               Get Free Site Audit
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+              <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </a>
             <a
               href="#case-studies"
-              className="inline-flex items-center gap-2 bg-white text-ink font-semibold px-7 py-3.5 rounded-full border border-ink/12 hover:border-ink/25 text-sm transition-all hover:-translate-y-0.5 shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold px-7 py-3.5 rounded-full border border-ink/12 hover:border-ink/25 text-sm transition-all hover:-translate-y-0.5 shadow-sm w-full sm:w-auto"
             >
               See Results
             </a>
           </motion.div>
 
           {/* Stats — pill cards with icons */}
-          <motion.div variants={itemVariants} className="mt-9 grid grid-cols-2 lg:flex lg:flex-wrap gap-3">
+          <motion.div variants={itemVariants} className="mt-9 flex flex-col lg:flex-row gap-3">
             {stats.map((s) => (
               <div
                 key={s.label}
-                className="flex items-center gap-2.5 bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl px-4 py-3.5 shadow-sm"
+                className="flex items-center gap-3 bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl px-4 py-3.5 shadow-sm w-full lg:w-auto"
               >
                 <div className="w-8 h-8 rounded-xl bg-orange/10 flex items-center justify-center flex-shrink-0 text-orange">
                   <s.Icon />
@@ -400,21 +400,22 @@ export default function HeroSection() {
 
       {/* ── Static industry trust strip ── */}
       <div className="relative z-10 py-5 px-5 sm:px-8">
-        <div className="max-w-7xl mx-auto bg-white/60 border border-ink/8 rounded-2xl px-5 py-5 shadow-sm">
-          <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-ink/40 mb-4">
+        <div className="max-w-7xl mx-auto bg-white/60 border border-ink/8 rounded-2xl px-5 py-4 shadow-sm">
+          <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-orange mb-4">
             Trusted by local businesses across industries
           </p>
-          <div className="grid grid-cols-5 sm:grid-cols-5 gap-2">
+          {/* Mobile: 2-column grid | Desktop: single flex row, centered */}
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2">
             {trustIndustries.map((item) => (
               <div
                 key={item.label}
-                className={`flex flex-col items-center gap-1.5 rounded-xl border border-ink/8 bg-cream px-2 py-2.5 transition-colors group cursor-default ${item.isMore ? 'border-orange/20 bg-orange/5' : 'hover:border-orange/20 hover:bg-orange/5'}`}
+                className={`flex items-center justify-center gap-1.5 rounded-full border px-3 py-1.5 transition-colors group cursor-default ${item.isMore ? 'border-orange/30 bg-orange/8' : 'border-ink/12 bg-cream hover:border-orange/25 hover:bg-orange/5'}`}
               >
                 <item.Icon
-                  className={`w-4 h-4 flex-shrink-0 transition-colors ${item.isMore ? 'text-orange/60' : 'text-ink/40 group-hover:text-orange/60'}`}
+                  className={`w-3.5 h-3.5 flex-shrink-0 transition-colors ${item.isMore ? 'text-orange' : 'text-ink/55 group-hover:text-orange/70'}`}
                 />
                 <span
-                  className={`text-[9px] sm:text-[10px] font-medium text-center leading-tight transition-colors ${item.isMore ? 'text-orange/70' : 'text-ink/50 group-hover:text-ink/70'}`}
+                  className={`text-[11px] font-medium leading-tight transition-colors ${item.isMore ? 'text-orange' : 'text-ink/60 group-hover:text-ink/80'}`}
                 >
                   {item.label}
                 </span>

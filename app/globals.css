@@ -33,6 +33,14 @@
     text-wrap: balance;
   }
 
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Orange diagonal lines — used in all hero sections */
   .hero-lines {
     background-image: repeating-linear-gradient(
