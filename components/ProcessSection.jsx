@@ -8,33 +8,33 @@ const steps = [
   {
     number: '01',
     icon: SearchIcon,
-    title: 'Audit',
+    title: 'Full SEO Audit',
     description:
-      'We tear apart your current online presence: GBP, citations, backlinks, on-page signals, and pinpoint exactly where visibility is being lost.',
+      'We dig into your Google presence, citations, backlinks, and on-page setup to find exactly what is stopping you from ranking.',
     detail: 'Full GBP audit, citation check, competitor gap analysis',
   },
   {
     number: '02',
     icon: MapIcon,
-    title: 'Strategy',
+    title: 'Local Growth Strategy',
     description:
-      'No templates. We build a campaign plan specific to your industry, city, and competition level. You know exactly what we are doing and why.',
-    detail: 'Custom keyword map, local content plan, citation targets',
+      'We build a custom plan based on your location, niche, and competitors. No copy paste strategies, everything is made for your business.',
+    detail: 'Keyword Research, Content Roadmap, Local Citation Target',
   },
   {
     number: '03',
     icon: Bolt,
-    title: 'Execute',
+    title: 'Full Execution',
     description:
-      'We handle everything: optimization, citation cleanup, content, link outreach. You keep running your business. We do the work.',
+      'We take care of all the heavy lifting. Citation fixes, content publishing, on-page updates, and link building. You stay focused on your customers.',
     detail: 'Hands-off execution, weekly progress updates',
   },
   {
     number: '04',
     icon: TrendingUp,
-    title: 'Grow',
+    title: 'Rankings to Revenue',
     description:
-      'Rankings climb, calls increase, foot traffic grows. Monthly reporting shows exactly what has moved and where we are pushing next.',
+      'Your rankings go up, your phone gets busier, and your business grows. We keep you updated every step of the way with clear monthly reports.',
     detail: 'Monthly report, ranking tracker, ROI breakdown',
   },
 ]
@@ -87,15 +87,15 @@ export default function ProcessSection() {
           <div className="flex items-center gap-3 mb-5">
             <div className="w-8 h-[1.5px] bg-orange" />
             <span className="text-xs uppercase tracking-[0.15em] text-white/40 font-medium">
-              How It Works
+              THE WAY WE WORK
             </span>
           </div>
           <h2 className="font-display text-4xl lg:text-5xl font-bold text-white leading-[1.1]">
-            From unknown to{' '}
-            <span className="text-orange">undeniable.</span>
+            Go from overlooked to{' '}
+            <span className="text-orange">fully booked.</span>
           </h2>
           <p className="mt-4 text-base text-white/40 leading-relaxed">
-            Four steps. Zero guesswork. A process refined across 150+ local business campaigns.
+            No guesswork. No fluff. Just a proven four step process that gets local businesses found.
           </p>
         </motion.div>
 

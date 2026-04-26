@@ -24,12 +24,12 @@ const listVariants = {
 
 export default function FreeAuditSection() {
   const [status, setStatus] = useState('idle') // idle | loading | success | error
-  const [url,    setUrl]    = useState('')
-  const [email,  setEmail]  = useState('')
+  const [url, setUrl] = useState('')
+  const [email, setEmail] = useState('')
 
-  const leftRef  = useRef(null)
+  const leftRef = useRef(null)
   const rightRef = useRef(null)
-  const leftInView  = useInView(leftRef,  { once: true, margin: '-80px 0px' })
+  const leftInView = useInView(leftRef, { once: true, margin: '-80px 0px' })
   const rightInView = useInView(rightRef, { once: true, margin: '-80px 0px' })
 
   const handleSubmit = async (e) => {
@@ -195,9 +195,9 @@ export default function FreeAuditSection() {
                       <StarIcon key={i} className="w-3 h-3 text-orange" />
                     ))}
                   </div>
-                  <span className="text-xs text-ink/40">4.9 from 80+ reviews</span>
+                  <span className="text-xs text-ink/40">4.9 from 1270+ reviews</span>
                 </div>
-                <span className="text-xs text-ink/40">150+ audits done this month</span>
+                <span className="text-xs text-ink/40">350+ audits done this month</span>
               </div>
             </>
           )}

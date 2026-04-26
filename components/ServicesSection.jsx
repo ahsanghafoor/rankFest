@@ -38,11 +38,11 @@ const services = [
     slug: 'local-seo',
     title: 'Local SEO',
     description:
-      'Google Business, citations, local pages. We get you to position 1 for the searches that drive walk-ins and calls.',
+      'Get found by customers searching in your area. We optimize your GBP/GMB, build local citations, and create content that pushes you to position 1 on Google Search and Maps.',
     bullets: [
-      'GBP optimization',
-      'Local citations',
-      'On-page + content',
+      'GBP/GMB optimization',
+      'On-page + content creation',
+      'Local citation building',
       'Review strategy',
     ],
   },
@@ -51,12 +51,12 @@ const services = [
     slug: 'web-development',
     title: 'Web Development',
     description:
-      'Marketing sites, landing pages, headless WordPress. Fast, accessible, built to convert. No bloated themes.',
+      'We build fast, clean, and conversion-ready websites that turn visitors into paying customers. No bloated templates, no slow load times.',
     bullets: [
       'Custom Website',
       'Wordpress Website',
-      'Shopify Development',
       'Software Development',
+      'Shopify Development',
     ],
   },
   {
@@ -64,12 +64,12 @@ const services = [
     slug: 'ai-chatbots',
     title: 'AI Chatbots',
     description:
-      'Conversational lead capture trained on your services, hours, and FAQs. Books appointments while you sleep.',
+      'Never miss a lead again. Our AI chatbots are trained on your business, answer questions instantly, capture lead details, and book appointments 24 hours a day, 7 days a week.',
     bullets: [
       'Trained on your content',
       'Lead capture',
       'Calendar booking',
-      'Handoff to humans',
+      'Handoff to Your Team',
     ],
   },
 ]
@@ -108,7 +108,7 @@ export default function ServicesSection() {
             {/* Label */}
             <div className="w-6 h-[2px] bg-orange rounded-full" />
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/45">
-              What we Ship
+              What we Do
             </span>
           </div>
 
@@ -120,8 +120,7 @@ export default function ServicesSection() {
 
           {/* Sub */}
           <p className="mt-4 text-base text-ink/50 leading-relaxed">
-            No bolt-on services. No filler retainers. Just the work that actually moves
-            the needle for local businesses.
+            We do not spread ourselves thin. We focus on three core services that actually bring local businesses more calls, more leads, and more revenue
           </p>
         </motion.div>
 

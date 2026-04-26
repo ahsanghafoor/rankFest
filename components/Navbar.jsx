@@ -59,7 +59,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="px-4 py-2.5 text-sm font-medium text-ink/55 hover:text-ink rounded-full hover:bg-ink/5 transition-all duration-150 whitespace-nowrap"
+                  className="px-4 py-2.5 text-sm font-medium text-ink/55 hover:text-white rounded-full hover:bg-orange transition-all duration-150 whitespace-nowrap"
                 >
                   {link.label}
                 </a>

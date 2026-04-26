@@ -33,20 +33,20 @@ export default function CTASection() {
             <div className="flex items-center gap-2.5 mb-3 justify-center lg:justify-start">
               <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/65">
-                Limited spots available
+                SPOTS FILLING UP FAST
               </span>
             </div>
             <h2
               className="font-display font-bold text-white leading-[1.08] italic"
               style={{ fontSize: 'clamp(1.9rem, 3.6vw, 3rem)' }}
             >
-              Ready to own your local market?
+              Ready to dominate your local market?
             </h2>
             <p className="mt-3 text-sm lg:text-base text-white/65 leading-relaxed max-w-md mx-auto lg:mx-0">
-              We take on a limited number of new clients each month. Serious about growth? Let's talk.
+              We work with a small group of businesses at a time so every client gets real attention. If you are serious, let's get started.
             </p>
             <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
-              {['No long-term contracts', 'Results in 30 days', 'Cancel anytime'].map((b) => (
+              {['No long-term contracts', 'Results in 30 days', 'Full flexibility always'].map((b) => (
                 <span key={b} className="flex items-center gap-1.5 text-white/55 text-xs">
                   <span className="text-white font-bold">✓</span>{b}
                 </span>

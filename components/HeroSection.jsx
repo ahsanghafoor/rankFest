@@ -17,10 +17,9 @@ const itemVariants = {
 
 
 const bannerItems = [
-  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD RESEARCH',
-  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL kEYWORD TARGETING',
-  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD RESEARCH',
-  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL kEYWORD TARGETING',
+  'SITE AUDIT', 'COMPETITOR ANALYSIS', 'KEYWORD RESEARCH', 'CONTENT CREATION', 'ON-PAGE SEO', 'TECHNICAL SEO', 'GMB OPTIMIZATION',
+  'LOCAL kEYWORD TARGETING', 'CITATION BUILDING', 'LINK BUILDING', 'REVIEW MANAGEMENT', 'RANK TRACKING', 'SITE AUDIT', 'COMPETITOR ANALYSIS', 'KEYWORD RESEARCH', 'CONTENT CREATION', 'ON-PAGE SEO', 'TECHNICAL SEO', 'GMB OPTIMIZATION',
+  'LOCAL kEYWORD TARGETING', 'CITATION BUILDING', 'LINK BUILDING', 'REVIEW MANAGEMENT', 'RANK TRACKING'
 ]
 
 /* ── Stat pill icons ── */
@@ -42,7 +41,7 @@ function TrendingUpIcon() {
 
 const stats = [
   { value: '150+', label: 'Local Clients', Icon: UsersIcon },
-  { value: '3x', label: 'Traffic Growth', Icon: TrendingUpIcon },
+  { value: '7x', label: 'Traffic Growth', Icon: TrendingUpIcon },
   {
     value: '4.9 ★', label: 'Client Satisfaction', Icon: StarIcon
   },
@@ -139,7 +138,6 @@ const trustIndustries = [
   { label: 'HVAC', Icon: IcoWind },
   { label: 'Dentists', Icon: IcoActivity },
   { label: 'Roofers', Icon: IcoHome },
-  { label: 'Solar', Icon: IcoSun },
   { label: 'Pest Control', Icon: IcoShield },
   { label: 'Remodeling', Icon: IcoPencilRuler },
   { label: 'Restoration', Icon: IcoDroplet },
@@ -239,7 +237,7 @@ export default function HeroSection() {
             variants={itemVariants}
             className="mt-7 text-base lg:text-[1.05rem] text-ink/55 leading-relaxed max-w-[490px]"
           >
-            We help your business show up #1 so nearby customers find you first. We audit, fix, and keep improving your rankings over time.
+            We help local businesses rank higher on Google, attract more customers, and grow with data driven strategies that deliver real results.
           </motion.p>
 
           {/* CTAs */}
@@ -257,7 +255,7 @@ export default function HeroSection() {
               href="#case-studies"
               className="inline-flex items-center justify-center gap-2 bg-white text-ink font-semibold px-7 py-3.5 rounded-full border border-ink/12 hover:border-ink/25 text-sm transition-all hover:-translate-y-0.5 shadow-sm w-full sm:w-auto"
             >
-              See Results
+              See Real Results
             </a>
           </motion.div>
 
