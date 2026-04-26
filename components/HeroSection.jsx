@@ -15,11 +15,12 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
 }
 
+
 const bannerItems = [
-  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD TARGETING',
-  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL RANKINGS',
-  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD TARGETING',
-  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL RANKINGS',
+  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD RESEARCH',
+  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL kEYWORD TARGETING',
+  'LOCAL SEO', 'GOOGLE MAPS', 'CITATION BUILDING', 'KEYWORD RESEARCH',
+  'ON-PAGE SEO', 'LINK BUILDING', 'GMB OPTIMIZATION', 'LOCAL kEYWORD TARGETING',
 ]
 
 /* ── Stat pill icons ── */
@@ -278,22 +279,7 @@ export default function HeroSection() {
             ))}
           </motion.div>
 
-          {/* Mobile-only social proof strip — mirrors the hidden right column */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-6 lg:hidden grid grid-cols-3 gap-2.5"
-          >
-            {[
-              { value: '+312%', label: 'Calls Increased', color: 'text-green-500' },
-              { value: '#1', label: 'Maps Ranking', color: 'text-orange' },
-              { value: '4.9★', label: '127 Reviews', color: 'text-orange' },
-            ].map((item) => (
-              <div key={item.label} className="bg-white/75 backdrop-blur-sm border border-ink/8 rounded-2xl p-3 text-center">
-                <div className={`font-bold text-base leading-none ${item.color}`}>{item.value}</div>
-                <div className="text-[9px] text-ink/40 uppercase tracking-wide mt-1.5 leading-snug">{item.label}</div>
-              </div>
-            ))}
-          </motion.div>
+
         </motion.div>
 
         {/* ── Right column — Hero visual ── */}
@@ -398,10 +384,32 @@ export default function HeroSection() {
 
       </div>
 
+      {/* ── Scrolling dark banner ── */}
+      <div className="relative z-20 mb-4">
+        <div
+          className="bg-dark overflow-hidden"
+        >
+          <div className="py-4 overflow-hidden">
+            <div className="flex marquee-track" style={{ width: 'max-content' }}>
+              <div className="flex items-center h-full">
+                {bannerItems.map((item, i) => (
+                  <div key={i} className="flex items-center flex-shrink-0">
+                    <span className="text-white/70 text-[11px] font-semibold uppercase tracking-[0.2em] px-4 whitespace-nowrap">
+                      {item}
+                    </span>
+                    <span className="text-orange text-[12px]">✦</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* ── Static industry trust strip ── */}
       <div className="relative z-10 py-5 px-5 sm:px-8">
-        <div className="max-w-7xl mx-auto bg-white/60 border border-ink/8 rounded-2xl px-5 py-4 shadow-sm">
-          <p className="text-center text-[11px] font-bold uppercase tracking-[0.22em] text-orange mb-4">
+        <div className="max-w-6xl mx-auto bg-white/40 border border-ink/8 rounded-2xl px-5 py-4 shadow-sm">
+          <p className="text-center text-[12px] font-bold uppercase tracking-[0.22em] text-orange mb-4">
             Trusted by local businesses across industries
           </p>
           {/* Mobile: 2-column grid | Desktop: single flex row, centered */}
@@ -425,27 +433,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* ── Scrolling dark banner ── */}
-      <div className="relative z-20 mb-4">
-        <div
-          className="bg-dark overflow-hidden"
-        >
-          <div className="py-4 overflow-hidden">
-            <div className="flex marquee-track" style={{ width: 'max-content' }}>
-              <div className="flex items-center h-full">
-                {bannerItems.map((item, i) => (
-                  <div key={i} className="flex items-center flex-shrink-0">
-                    <span className="text-white/70 text-[11px] font-semibold uppercase tracking-[0.2em] px-4 whitespace-nowrap">
-                      {item}
-                    </span>
-                    <span className="text-orange text-[12px]">✦</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
     </section>
   )
