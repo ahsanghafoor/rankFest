@@ -23,7 +23,6 @@ const services = [
 const whyUs = [
   'Free initial audit — no strings attached',
   'Response within 24 hours, usually faster',
-  'No long-term contracts required',
   'Honest timelines and realistic expectations',
 ]
 
@@ -88,8 +87,7 @@ export default function ContactPage() {
             </h1>
 
             <p className="text-base lg:text-xl text-ink/55 leading-relaxed">
-              Whether you have a specific project in mind or just want to understand what&apos;s possible for your
-              business, we&apos;re always happy to have an honest conversation.
+              Got questions? Not sure what you need yet? Reach out anyway. We will help you figure out the right move for your business.
             </p>
           </motion.div>
         </div>
@@ -118,8 +116,7 @@ export default function ContactPage() {
                   <span className="text-orange">not a bot</span>
                 </h2>
                 <p className="text-ink/55 text-[15px] leading-relaxed">
-                  Every enquiry is read and responded to by a member of the RankFest team — not an autoresponder,
-                  not a virtual assistant. We respect your time and will give you a straight answer.
+                  Every message you send goes straight to our team. A real person reads it and gets back to you with an actual answer, not a templated reply.
                 </p>
               </div>
 
@@ -170,7 +167,7 @@ export default function ContactPage() {
               </div>
 
               {/* Why reach out */}
-              <div className="bg-dark rounded-2xl p-6">
+              {/* <div className="bg-dark rounded-2xl p-6">
                 <p className="text-white text-sm font-semibold mb-4">What to expect when you reach out:</p>
                 <div className="space-y-3">
                   {whyUs.map((item) => (
@@ -182,7 +179,7 @@ export default function ContactPage() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* Right: form */}
@@ -211,7 +208,8 @@ export default function ContactPage() {
                 <>
                   <h3 className="font-display text-2xl font-bold text-ink mb-1.5">Send Us a Message</h3>
                   <p className="text-sm text-ink/45 mb-7">
-                    Tell us a bit about your business and what you&apos;re looking for.
+                    Share a few details and we will get back to you within 24 hours.
+
                   </p>
 
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -289,7 +287,7 @@ export default function ContactPage() {
                         name="message"
                         value={form.message}
                         onChange={handleChange}
-                        placeholder="What does your business do? What are your current challenges with online visibility? Any context helps us give you a better answer."
+                        placeholder="What kind of business do you run and what is your biggest challenge right now? Any details help us come prepared."
                         required
                         rows={5}
                         className={`${inputClass} resize-none`}

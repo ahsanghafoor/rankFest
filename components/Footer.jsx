@@ -46,7 +46,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-[200px]">
-              Local SEO that moves the needle. No vanity metrics, no fluff.
+              Local SEO that gets you more calls, more leads, and more customers
             </p>
             <div className="mt-6 flex gap-2.5">
               {socialLinks.map(({ icon: Icon, href, label }) => (

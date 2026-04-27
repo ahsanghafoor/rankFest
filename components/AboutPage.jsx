@@ -53,8 +53,7 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-base lg:text-xl text-ink/55 leading-relaxed max-w-2xl">
-              We are a specialist local SEO and digital growth agency helping independent businesses
-              compete and win online — without the fluff, the vanity metrics, or the 12-month lock-in contracts.
+              We are a focused local SEO agency. We work with independent businesses that want to rank higher, get found faster, and grow without the nonsense.
             </p>
           </motion.div>
         </div>
@@ -79,9 +78,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-ink/60 text-[15px] leading-relaxed">
                 <p>
-                  RankFest was founded after watching too many incredible local businesses — the family-run dentist,
-                  the third-generation plumber, the talented home renovation company — get buried on Google by
-                  national chains with bigger marketing budgets and zero local roots.
+                  RankFest was built after years of watching great local businesses lose customers to national chains that simply had bigger budgets. The family dentist, the local plumber, the independent contractor. All of them doing incredible work but barely showing up on Google.
                 </p>
                 <p>
                   We built a different kind of agency. One that specialises exclusively in local search, speaks in
@@ -97,10 +94,9 @@ export default function AboutPage() {
 
               <div className="mt-8 space-y-3">
                 {[
-                  'Specialist local SEO — not a generalise-everything agency',
-                  'Plain-English reporting every single month',
-                  'No long-term contracts — we earn your business every month',
-                  'Results across US, UK, Canada, and Australia',
+                  'Specialists in local SEO with years of broader SEO experience behind us',
+                  'Monthly reporting that shows real numbers, calls, leads, and rankings',
+                  'Trusted by local businesses across different countries',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <span className="w-5 h-5 rounded-full bg-orange/15 flex items-center justify-center mt-0.5 flex-shrink-0">
@@ -137,14 +133,14 @@ export default function AboutPage() {
               </div>
 
               {/* Mini stat bar */}
-              <div className="grid grid-cols-2 gap-3 mt-4">
+              {/* <div className="grid grid-cols-2 gap-3 mt-4">
                 {companyStats.slice(0, 2).map((stat) => (
                   <div key={stat.label} className="bg-white rounded-2xl border border-ink/6 p-5 text-center">
                     <div className="font-display text-2xl font-bold text-orange">{stat.value}</div>
                     <div className="text-ink/45 text-xs mt-1">{stat.label}</div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
@@ -295,7 +291,7 @@ export default function AboutPage() {
       {/* ── CTA ── */}
       <CTABanner
         title="Ready to work together?"
-        subtitle="Start with a free audit. No obligation, no sales pressure — just honest data about where you stand and what it would take to get to the top."
+        subtitle="Start with a free audit and find out exactly where your business stands on Google and what it would take to start ranking higher."
         ctaText="Get My Free Audit"
         ctaHref="/#free-audit"
         secondaryText="Or drop us a message →"

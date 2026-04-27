@@ -55,13 +55,13 @@ export default function CTABanner({
             <p className="mt-3 text-sm lg:text-base text-white/65 leading-relaxed max-w-md mx-auto lg:mx-0">
               {subtitle}
             </p>
-            <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
+            {/* <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
               {['No long-term contracts', 'Results in 30 days', 'Cancel anytime'].map((b) => (
                 <span key={b} className="flex items-center gap-1.5 text-white/55 text-xs">
                   <span className="text-white font-bold">✓</span>{b}
                 </span>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* ── Right: CTA + quote + avatars ── */}

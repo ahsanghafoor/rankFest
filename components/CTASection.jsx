@@ -45,13 +45,13 @@ export default function CTASection() {
             <p className="mt-3 text-sm lg:text-base text-white/65 leading-relaxed max-w-md mx-auto lg:mx-0">
               We work with a small group of businesses at a time so every client gets real attention. If you are serious, let's get started.
             </p>
-            <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
+            {/* <div className="mt-4 flex flex-col sm:flex-row sm:flex-wrap gap-y-2 gap-x-4 items-center lg:items-start">
               {['No long-term contracts', 'Results in 30 days', 'Full flexibility always'].map((b) => (
                 <span key={b} className="flex items-center gap-1.5 text-white/55 text-xs">
                   <span className="text-white font-bold">✓</span>{b}
                 </span>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* ── Right: CTA + quote + avatars ── */}
